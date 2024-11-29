@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  position: relative; /* Certifica-se de que o contêiner pai esteja posicionado corretamente */
+  height: 100vh; /* Garante que o contêiner ocupe toda a altura da janela */
+  width: 100vw; /* Garante que o contêiner ocupe toda a largura da janela */
 }
 
 .App-logo {
@@ -35,4 +38,90 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: #001f3f; /* Azul escuro */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+button {
+  box-shadow: 0 0 5px yellow,
+  0 0 25px yellow,
+  0 0 50px yellow,
+  0 0 100px yellow,
+  0 0 200px yellow;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute; /* Certifica-se de que o botão esteja absoluto */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Certifica-se de que o botão fique acima das partículas */
+}
+
+button:hover {
+  box-shadow: 0 0 5px yellow,
+  0 0 25px yellow,
+  0 0 50px yellow,
+  0 0 100px yellow,
+  0 0 200px yellow;
+}
+
+circle {
+  stroke: yellow;
+  stroke-width: 2;
+  fill: none;
+  filter: drop-shadow(0 0 5px yellow) drop-shadow(0 0 25px yellow) drop-shadow(0 0 50px yellow) drop-shadow(0 0 100px yellow) drop-shadow(0 0 200px yellow);
+  z-index: 3; /* Certifica-se de que o círculo fique acima das partículas */
+}
+
+circle[style*="fill: red"], circle[style*="fill: yellow"] {
+  fill: yellow;
+}
+
+text[style*="fill: black"] {
+  fill: yellow;
+  cursor: pointer;
+}
+
+line {
+  stroke: yellow;
+  stroke-width: 2;
+  z-index: 3; /* Certifica-se de que a linha fique acima das partículas */
+}
+
+polygon {
+  stroke: yellow;
+  stroke-width: 2;
+  fill: none;
+  z-index: 3; /* Certifica-se de que o polígono fique acima das partículas */
+}
+
+.svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 1; /* SVGs ficam abaixo do botão */
+  pointer-events: all; /* Para garantir que os cliques nos SVGs sejam registrados */
+}
+
+
+.particles-container {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* As partículas ficam abaixo dos elementos interativos */
 }

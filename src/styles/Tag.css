@@ -1,0 +1,42 @@
+.tag-container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh;
+    background-color: #101520; /* Mantém a cor de fundo */
+    color: white;
+    padding: 20px;
+  }
+  
+  .tag-content {
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    max-width: 800px; /* Define um limite máximo de largura para o conteúdo */
+  }
+  
+  .tag-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: yellow; /* Mantém a cor do texto */
+  }
+  
+  .tag-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .tag-content ul {
+    list-style-type: disc; /* Define o estilo da lista */
+    padding-left: 20px; /* Adiciona um pouco de espaçamento à esquerda da lista */
+  }
+  
+  .tag-content li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tag-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: yellow; /* Mantém a cor do texto */
+  }
+  
