@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/magically-app/static/css/main.16545a61.css",
-    "main.js": "/magically-app/static/js/main.d1af1b17.js",
+    "main.js": "/magically-app/static/js/main.e5b3a6af.js",
     "static/js/453.9e18350d.chunk.js": "/magically-app/static/js/453.9e18350d.chunk.js",
     "index.html": "/magically-app/index.html",
     "main.16545a61.css.map": "/magically-app/static/css/main.16545a61.css.map",
-    "main.d1af1b17.js.map": "/magically-app/static/js/main.d1af1b17.js.map",
+    "main.e5b3a6af.js.map": "/magically-app/static/js/main.e5b3a6af.js.map",
     "453.9e18350d.chunk.js.map": "/magically-app/static/js/453.9e18350d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16545a61.css",
-    "static/js/main.d1af1b17.js"
+    "static/js/main.e5b3a6af.js"
   ]
 }
